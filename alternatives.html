@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Альтернативы скроллингу — StopDoom</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/alternatives.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">🛑 StopDoom</a>
+      <button class="mobile-menu-btn">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="quiz.html">Тест</a></li>
+        <li><a href="tracker.html">Трекер</a></li>
+        <li><a href="library.html">Библиотека</a></li>
+        <li><a href="calculator.html">Калькулятор</a></li>
+        <li><a href="alternatives.html" class="active">Альтернативы</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">О проекте</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="alt-header">
+      <div class="container">
+        <h1>Чем заменить скроллинг?</h1>
+        <p>Подборка занятий для разных настроений и ситуаций</p>
+      </div>
+    </section>
+
+    <section class="alt-section">
+      <div class="container">
+        <div class="mood-selector">
+          <h2>Как ты себя чувствуешь?</h2>
+          <div class="mood-buttons">
+            <button class="mood-btn active" data-mood="bored">😐 Скучно</button>
+            <button class="mood-btn" data-mood="anxious">😰 Тревожно</button>
+            <button class="mood-btn" data-mood="tired">😴 Устал</button>
+            <button class="mood-btn" data-mood="lonely">😔 Одиноко</button>
+            <button class="mood-btn" data-mood="stressed">😤 В стрессе</button>
+          </div>
+        </div>
+
+        <div id="alternatives-container" class="alternatives-container"></div>
+
+        <div class="random-section">
+          <h2>Не знаешь, что выбрать?</h2>
+          <button id="random-btn" class="cta-button primary large">🎲 Случайное занятие</button>
+          <div id="random-result" class="random-result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 StopDoom. Итоговый проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/alternatives.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Библиотека техник — StopDoom</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/library.css">
+  <link rel="stylesheet" href="css/visual-effects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<script src="js/main.js"></script>
+<script src="js/visual-effects.js"></script>
+<body data-theme="dark">
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">🛑 StopDoom</a>
+      <button class="mobile-menu-btn">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="quiz.html">Тест</a></li>
+        <li><a href="tracker.html">Трекер</a></li>
+        <li><a href="library.html" class="active">Библиотека</a></li>
+        <li><a href="calculator.html">Калькулятор</a></li>
+        <li><a href="alternatives.html">Альтернативы</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">О проекте</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="lib-header">
+      <div class="container">
+        <h1>Библиотека техник цифровой гигиены</h1>
+        <p>20+ проверенных способов взять контроль над цифровыми привычками</p>
+      </div>
+    </section>
+
+    <section class="lib-section">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-group">
+            <label>Категория:</label>
+            <select id="category-filter">
+              <option value="all">Все категории</option>
+              <option value="mindfulness">🧘 Осознанность</option>
+              <option value="cognitive">🧠 Когнитивные</option>
+              <option value="behavioral">🎯 Поведенческие</option>
+              <option value="technical">⚙️ Технические</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Время:</label>
+            <select id="time-filter">
+              <option value="all">Любое</option>
+              <option value="5">5 минут</option>
+              <option value="15">15 минут</option>
+              <option value="30">30 минут</option>
+              <option value="60">1 час+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Сложность:</label>
+            <select id="difficulty-filter">
+              <option value="all">Любая</option>
+              <option value="easy">Лёгко</option>
+              <option value="medium">Средне</option>
+              <option value="hard">Сложно</option>
+            </select>
+          </div>
+          <button id="reset-filters" class="cta-button secondary">Сбросить</button>
+        </div>
+
+        <div id="techniques-grid" class="techniques-grid"></div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+          <p>😕 Техники не найдены. Попробуй изменить фильтры.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 StopDoom. Итоговый проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/library.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест на думскроллинг — StopDoom</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">🛑 StopDoom</a>
+      <button class="mobile-menu-btn">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="quiz.html" class="active">Тест</a></li>
+        <li><a href="tracker.html">Трекер</a></li>
+        <li><a href="library.html">Библиотека</a></li>
+        <li><a href="calculator.html">Калькулятор</a></li>
+        <li><a href="alternatives.html">Альтернативы</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">О проекте</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quiz-header">
+      <div class="container">
+        <h1>Тест на уровень думскроллинга</h1>
+        <p>Ответь на 15 вопросов и узнай, насколько ты подвержен этой привычке</p>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="container">
+        <div class="quiz-info">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+          </div>
+          <p class="question-count">Вопрос <span id="current-question">1</span> из 15</p>
+        </div>
+
+        <form id="quiz-form" class="quiz-form">
+          <div id="quiz-questions"></div>
+          
+          <div class="quiz-navigation">
+            <button type="button" id="prev-btn" class="nav-btn" disabled>← Назад</button>
+            <button type="button" id="next-btn" class="nav-btn primary">Вперёд →</button>
+            <button type="submit" id="submit-btn" class="nav-btn primary" style="display: none;">Показать результат</button>
+          </div>
+        </form>
+
+        <div id="quiz-result" class="quiz-result" style="display: none;">
+          <div class="result-card">
+            <h2 id="result-title"></h2>
+            <div class="result-score">
+              <span class="score-number" id="score-number"></span>
+              <span class="score-label">из 60 баллов</span>
+            </div>
+            <p id="result-description"></p>
+            <div class="result-recommendations" id="result-recommendations"></div>
+            <div class="result-actions">
+              <a href="tracker.html" class="cta-button primary">Начать вести трекер</a>
+              <a href="library.html" class="cta-button secondary">Изучить техники</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 StopDoom. Итоговый проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
